@@ -1,0 +1,15 @@
+BruterCrypt by Luciano Laporta Podazza
+The main brute force algorithm was stolen from here:
+http://www.rbgrn.net/content/25-how-to-write-brute-force-password-cracker
+
+The rest of the code is just an adaptation :)
+
+Running BruterCrypt
+	python BruterCrypt.py MaxLength
+
+	Where MaxLength is the maximum size of the password to test. Please note that you need TrueCrypt installed on your system in order to work
+
+TODO
+	Get volume sizes so that way you know if you cracked an outer volume or a hidden one.
+	Improve performance, instead of calling the process over and over again, handle it on the fly like this:
+	http://blog.q-protex.com/2010/03/25/truecrypt-self-bruteforce/
